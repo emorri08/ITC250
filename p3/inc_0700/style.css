@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700,800,800i');
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+padding: 100px;
+background-image: url(tacotruck.svg);
+background-repeat: no-repeat;
+background-position: right;
+background-attachment: fixed;
+background-size: 700px 400px;
+height: 100%;
+}
+
+h1 {
+    padding-top: 0;
+    color: green;
+}
+
+td.footer {
+    font-family:'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: #222;
+    position: absolute;
+    top: 800px;
+    width: 100%;
+}
+
+p {
+    padding-right: 250px;
+}
