@@ -1,5 +1,19 @@
 <?php
 /**
+// ********************************************************* //
+// *                                                       * //
+// * Pager_inc.php                                         * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
+//
  * Pager_inc.php stores Pager class for paging records
  * 
  * The Pager class creates simple records paging by deconstructing the existing 
@@ -10,13 +24,6 @@
  * Paging Nav (next & previous arrows, etc.) on the page.
  *
  * 3/4/2012 - removed rc, record count being stored on querystring
- *
- * @package nmPager
- * @author Bill Newman <williamnewman@gmail.com>
- * @version 3.03 2012/03/04
- * @link http://www.newmanix.com/ 
- * @license https://www.apache.org/licenses/LICENSE-2.0
- * @todo none
  */
 
 class Pager

@@ -1,34 +1,213 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700,800,800i');
+/*
+
+// ********************************************************* //
+// *                                                       * //
+// * style.css                                             * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,600i|Righteous|Life+Savers:700');
+
 * {
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 
 body {
-padding: 100px;
-background-image: url(tacotruck.svg);
-background-repeat: no-repeat;
-background-position: right;
-background-attachment: fixed;
-background-size: 700px 400px;
-height: 100%;
+    padding: 7px 92px;
+    background-image: url(tacotruck.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 700px 400px;
+    height: 100%;
+}
+
+td h1 {
+    font-size: 38px;
+    font-family: 'Righteous', sans-serif;
+    padding-top: 0;
+    letter-spacing: 15px;
+    color: orangered;
 }
 
 h1 {
-    padding-top: 0;
-    color: green;
+    margin-top: 10px;
+}
+
+form p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #222;
+}
+
+input {
+    margin-left: 15px;
+    width: 250px;
+    border: 1px inset #888;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: lighter;
+    color: darkviolet;
+}
+
+input[type="submit"] {
+    font-family: 'Righteous', sans-serif;
+    font-size: 16px;
+    padding: 10px 50px;
+    background: orangered;
+    border: 2px outset #a2a2a2;
+    border-radius: 10px;
+    color: #fff;
+    margin: 30px 50px;
+}
+
+.reset {
+    font-family: 'Righteous', sans-serif;
+    font-size: 16px;
+    padding: 10px 50px;
+    background: orangered;
+    border: 2px outset #a2a2a2;
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    top: 500px;
+    left: 120px;
+}
+
+.reset :visited {
+    color: #fff;
+}
+
+.name strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: mediumseagreen;
 }
 
 td.footer {
-    font-family:'Open Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 300;
-    color: #222;
-    position: absolute;
-    top: 800px;
-    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px !important;
+    font-weight: 200;
+    color: #333 !important;
+    position: absolute !important; 
+    bottom: 10px !important;
+    left: 650px;
+    width: 400px !important;
 }
 
-p {
-    padding-right: 250px;
+footer.p {
+    font-size: 10px !important;
 }
+
+.price strong {
+    padding-left: 15px;
+    font-family: 'Life Savers', cursive;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    padding-top: 10px;
+}
+
+.name {
+    padding-top: 10px;
+}
+
+.description {
+    margin: 7px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #222;
+}
+
+.itemOrder {
+    margin: 7px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #222;
+}
+
+.totals,
+.topTotal {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #222;
+    padding-top: 3px;
+}
+
+.topTotal {
+    margin-top: 15px;
+}
+
+.orderConf {
+    padding: 15px 0 10px 0;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: mediumseagreen;
+}
+
+/******************* landing page styles *******************/
+
+#pageContent {
+    margin: auto;
+}
+
+#welcomeTxt {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: mediumseagreen;
+    text-align: center;
+    padding: 10px;
+    margin-top: 35px;
+}
+
+#menuLink {
+    color: #fff;
+    font-family: 'Righteous', sans-serif;
+    font-size: 46px;
+    border: 8px outset gray;
+    border-radius: 15px;
+    padding: 5px 25px 10px;
+    background: mediumseagreen;
+    position: absolute;
+    bottom: 400px;
+    left: 300px;
+}
+
+p.bodyTxt {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+td[valign="top"] {
+    width: 0;
+}
+
+/******************* end landing page styles *******************/

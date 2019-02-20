@@ -1,23 +1,19 @@
 <?php
-/**
- * config_inc.php stores site-wide configuration settings, functions & file references
- * 
- * Stores configuration data like support email address, SUPPORT_EMAIL
- * and functions like my_error_handler() which over-rides the default error handler of PHP.
- *
- * There are references to include files common_inc.php, which stores utility functions 
- * and credentials_inc.php which stores database credentials 
- *
- * @package nmCommon
- * @author Bill Newman <williamnewman@gmail.com>
- * @version 2.3 2015/07/06 
- * @link http://www.newmanix.com/ 
- * @license https://www.apache.org/licenses/LICENSE-2.0
- * @see common_inc.php
- * @see credentials_inc.php
- * @see custom_inc.php  
- * @todo none
- */
+// ********************************************************* //
+// *                                                       * //
+// * config_incphp                                         * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
+
+
 # START SETTINGS (show or hide page errors, turn on/off error logging)---------------------------------------------
 # We can un-comment the line below to either see default errors (1) or shut off visual errors completely (0). 
 //ini_set('error_reporting', E_ALL | E_STRICT);  # E_ALL | E_STRICT = currently tracking all errors & warnings
@@ -58,7 +54,7 @@ define('INCLUDE_PATH', PHYSICAL_PATH . 'inc_0700/'); # Path to PHP include files
 //define('INCLUDE_PATH', '/home/classes/horsey01/inc_cotlets/'); #Path to PHP include files - OUTSIDE WEB ROOT
 define('LOG_PATH', INCLUDE_PATH . 'log/'); # Log files are stored in the PHP include folder
 define('ADMIN_PATH', VIRTUAL_PATH . 'admin/'); # Admin files are in subfolder
-define('SUPPORT_EMAIL', 'jonathan.d.heilman@seattlecentral.edu'); # Email of site support
+define('SUPPORT_EMAIL', 'emorri08@seattlecentral.edu'); # Email of site support
 define('PREFIX', 'wn19_'); #Adds uniqueness to DB table names.  Limits hackability, naming collisions.  In WordPress the prefix is wp_
 define('THIS_PAGE', basename($_SERVER['PHP_SELF'])); # Current page name, stripped of folder info - (saves resources)
 # END CONSTANTS & PATHS (universal file paths & values)--------------------------------------------------------------------
@@ -74,11 +70,11 @@ include INCLUDE_PATH . 'MyAutoLoader.php'; #Allows multiple versions of AutoLoad
 $config->theme = 'Bootswatch'; #default theme (header/footer combo) see 'Themes' folder for others and info
 $config->style = 'cerulean.css'; #currently only Bootswatch Theme uses style to switch look & feel
 $config->slogan = 'Cotlets are Awesome!';
-$config->metaDescription = 'Welcome to the Tijuana Tacos website.';
+$config->metaDescription = 'Welcome to Dana\'s House of Flaming Flatulence!';
 $config->metaKeywords = 'Cotlets,Apricots,Turkish Delight,database,mysql,php';
 $config->metaRobots = 'no index, no follow';
-$config->banner = 'Tijuana Taco Truck'; #goes inside header - can be overwritten
-$config->copyright = 'Tijuana Tacos, &copy; 2014 - ' . date('Y'); #goes inside footer - can be overwritten
+$config->banner = 'Dana\'s House of Flaming Flatulence'; #goes inside header - can be overwritten
+$config->copyright = 'Dana\'s Flaming Tacos, &copy; 2017 - ' . date('Y'); #goes inside footer - can be overwritten
 
 $config->sidebar1 = '
 <h3 align="center">Sidebar 1</h3>

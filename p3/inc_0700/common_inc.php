@@ -1,5 +1,19 @@
 <?php
 /**
+// ********************************************************* //
+// *                                                       * //
+// * common_inc.php                                        * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
+ *
  * common_inc.php stores site-wide utility functions
  *
  * Version 2.02 adds support for absolute URLs in makeLinks() 
@@ -24,15 +38,7 @@
  * Version 2.21 merges version 2.20 and 2.103 which includes fix for formReq(), adding feedback() warning levels internally, documentation
  * 
  * Version 2.22 removes extension2fileType() and checkFileType() - these will be added to new version of upload files
- * 
- * @package nmCommon
- * @author Bill Newman <williamnewman@gmail.com>
- * @version 2.22 2013/05/28
- * @link http://www.newmanix.com/  
- * @license https://www.apache.org/licenses/LICENSE-2.0
- * @todo add getSET() to accommodate MySQL set
- * @todo create fallback on new version of getENUM() if no enum values
- * @todo replace version 2.21 (this version) into nmCommon, nmWDK and ITC290 Common Files
+
  */
  
 /*

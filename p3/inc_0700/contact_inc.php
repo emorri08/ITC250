@@ -1,5 +1,18 @@
 <?php
 /**
+// ********************************************************* //
+// *                                                       * //
+// * contact_inc.php                                       * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
  * contact_include.php hides the messy code that supports contact.php 
  *
  * contact.php is a postback application designed to provide a 
@@ -39,16 +52,6 @@
  * PHP function sendPOSTtoJS().  On page load a JS function named loadElements() matches the 
  * embedded JS array to the form elements on the page, and reloads all user data into the
  * form elements. 
- *
- * @package nmCAPTCHA
- * @author Bill Newman <williamnewman@gmail.com>
- * @version 2.2 2013/02/02
- * @link http://www.newmanix.com/
- * @license https://www.apache.org/licenses/LICENSE-2.0
- * @see demo_contact.php  
- * @see util.js
- * @see recaptchalib.php   
- * @todo none
  */
 
 /**

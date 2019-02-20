@@ -1,16 +1,17 @@
 <?php
-/**
- * custom_inc.php stores custom functions specific to your application
- * 
- * Keeping common_inc.php clear of your functions allows you to upgrade without conflict
- * 
- * @package nmCommon
- * @author Bill Newman <williamnewman@gmail.com>
- * @version 2.091 2011/06/17
- * @link http://www.newmanix.com/  
- * @license https://www.apache.org/licenses/LICENSE-2.0
- * @todo add safeEmail to common_inc.php
- */
+// ********************************************************* //
+// *                                                       * //
+// * custom_inc.php                                        * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
  
 /**
  * Place your custom functions below so you can upgrade common_inc.php without trashing 

@@ -1,18 +1,17 @@
 <?php
-/**
- * footer_inc.php provides the right panel and footer for our site pages 
- *
- * Includes dynamic copyright data 
- *
- * @package nmCommon
- * @author Bill Newman <williamnewman@gmail.com>
- * @version 2.091 2011/06/17
- * @link http://www.newmanix.com/  
- * @license https://www.apache.org/licenses/LICENSE-2.0
- * @see template.php
- * @see header_inc.php 
- * @todo none
- */
+// ********************************************************* //
+// *                                                       * //
+// * footer_inc.php                                        * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
 ?>
 	  <!-- footer include starts here -->
 	  </td>
@@ -24,9 +23,9 @@
       <!-- change footer color here -->
 	<tr>
 		<td class="footer" colspan="3">
-		    <p align="center"><b>Tijuana Tacos</b></p>
+		    <p align="center"><b>Dana's Flaming Tacos</b></p>
 			<p align="center">All Rights Reserved:</p>
-	        <p align="center"><em>&copy; 2007 - <?php echo date("Y");?></em></p>
+	        <p align="center"><em>&copy; 2017 - <?php echo date("Y");?></em></p>
 		</td>
   </tr>
 </table>
