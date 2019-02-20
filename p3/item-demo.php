@@ -1,10 +1,17 @@
 <?php
-// * item-demo.php
-// * @package Taco Truck
-// * @author Elly Boyd <emorri08@seattlecentral.edu>
-// * @version 1.3 2019/02/12
-// * @link http://ellycodes.com/
-// * @license https://www.apache.org/licenses/LICENSE-2.0
+// ********************************************************* //
+// *                                                       * //
+// * item_demo.php                                         * //
+// *                                                       * //
+// * Dana's Flaming House of Flatulence                    * //
+// *                                                       * //
+// * @package Taco Truck                                   * //
+// * @author Group 3 <emorri08@seattlecentral.edu>         * //
+// * @version 1.3 2019/02/12                               * //
+// * @link http://ellycodes.com/                           * //
+// * @license https://www.apache.org/licenses/LICENSE-2.0  * //
+// *                                                       * //
+// ********************************************************* //
 
 require 'inc_0700/config_inc.php';
 include 'items.php'; 
@@ -41,11 +48,13 @@ function showForm() # shows form so user can order from the food truck.
   
     foreach($config->items as $item)
     {       
-        echo '<p><strong>' . $item->Name . '</strong></p>';
+        echo '<p class="name"><strong>' . $item->Name . '</strong></p>';
+        
+        echo '<p class="price" style="padding-left: 15px";><strong>$ ' . number_format($item->Price, 2) . '</strong></p>';
             
-        echo '<p>' . $item->Description . '</p>';
+        echo '<p class="description">' . $item->Description . '</p>';
             
-        echo '<p>Order Amount <input type="text" name="item_' . $item->ID . '" /></p>';
+        echo '<p>Order Amount <input type="number" min="0" name="item_' . $item->ID . '" /></p>';
     } //end foreach($config->items as $item)      
     
         echo '
@@ -62,7 +71,12 @@ function showData() #form submits here we show itmes ordered
 { 
     get_header(); #defaults to footer_inc.php
 	
-    echo '<h3 align="center">' . smartTitle() . '</h3>';
+    echo '<h3 class="orderConf">Your Order:</h3>';
+    
+    //random order number
+    echo '<p class="totals"> order #: ' . (rand(1000000, 9999999)) . '</p><br />';
+    
+    $order_subtotal = 0;
     
  	foreach($_POST as $name => $value)//loop the form elements 
     {      
@@ -77,12 +91,23 @@ function showData() #form submits here we show itmes ordered
 			
             if($value!=""){
                 (float)$subtotal=$value*$thisItem->Price;
-                echo "<p>You ordered $value $thisItem->Name(s) which costs $" . number_format($subtotal, 2) . "</p>";
+                
+                $order_subtotal += $subtotal;
+                
+                echo "<p class='itemOrder'>$value $thisItem->Name -- cost: $" . number_format($subtotal, 2) . "</p>";
             } //end nested if($value!="")
         } // end if(substr($name,0,5)=='item_')   
     } //end foreach
+    
+      
+    $tax = $order_subtotal * .12;
+    $total = $order_subtotal + $tax;
+    
+    echo '<p class="topTotal">Subtotal: $' . number_format($order_subtotal,2) . '</p>';
+    echo '<p class="totals">Tax: $' . number_format($tax,2) . '</p>';
+    echo '<p class="totals">Total: $' . number_format($total,2) . '</p>';
 
-    echo '<p align="center"><a href="' . THIS_PAGE . '">RESET</a></p>';
+    echo '<p class="reset" align="center"><a href="' . THIS_PAGE . '">RESET</a></p>';
 	get_footer(); #defaults to footer_inc.php
 } //end showData
 
